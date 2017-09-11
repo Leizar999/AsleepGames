@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>ASLEEP GAMES! - QSTORM</title>
+	<link rel="shortcut icon" href="./img/favicon2.png">
+	<link rel="stylesheet" href="./css/estilos.css">
+	<script src="./js/funcionesQstorm.js"></script>
+</head>
+
+<body onload="elegirNivel(), preguntas(), contador()">
+	<header>
+		<h1>ASLEEP GAMES! - QSTORM</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="hangMan.html">HANGMAN</a></li>
+			<li><a href="colorPicker.html">COLORS</a></li>
+			<li><a href="qstorm.html">Q-STORM</a></li>
+			<li><a href="estadisticas.html">ESTADÍSTICAS</a></li>
+		</ul>
+	</nav>
+	<main id="qstormMain">
+		<div id="pregunta"></div><br>
+		<input type="button" id="respuesta1" value="" onclick="acertado(this.value)">
+		<input type="button" id="respuesta2" value="" onclick="acertado(this.value)">
+		<progress id="tiempo" value="60" max="60"></progress><p id="tiempo2"></p>
+	</main>
+</body>
+
+</html>

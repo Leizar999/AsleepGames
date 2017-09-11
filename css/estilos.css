@@ -1,0 +1,356 @@
+/*Zona del diseño principal*/
+
+body {
+	background: url("../img/fondo3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+header {
+	background-color: #2e6e65;
+	color:white;
+	width: 50rem;
+	margin:0 auto;
+	height: 4rem;
+}
+
+header h1 {
+	text-shadow: 2px 2px 5px #111;
+	padding-top: 0.6rem;
+}
+
+main {
+	font-family: arial;
+	background-color: rgba(43,55,82,0.7);
+	width: 50rem;
+	margin:0 auto;
+	border-radius: 0.5rem;
+	box-shadow: 2px 2px 5px #333;
+	height: 15rem;
+}
+
+nav {
+	background-color: #86ee60;
+	width: 50rem;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	color: #2E6E65;
+	padding: 1rem;
+	font-family: arial;
+	font-weight: bold;
+
+}
+
+nav ul li a:hover {
+	background-color: #f4f7ed;
+	color:#2e6e65;
+	text-shadow: 4px 4px 3px #666;
+	transition: 0.9s;
+}
+
+body main #formulario #datosLogin {
+	margin-bottom: 1rem;
+	text-shadow: 1px 2px 2px #000;
+	color: #ffa;
+}
+
+#formulario {
+	position: relative;
+	color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+button {
+	margin-top: 1rem;
+	border-radius: 0.1rem;
+	box-shadow: 2px 2px 5px #111;
+}
+
+footer {
+	font-family: arial;
+}
+
+/*Zona de registro*/
+
+#registroMain {
+	color: white;
+	padding-top: 3rem;
+}
+
+/*Zona del HangMan*/
+
+#hangManMain {
+	height: 25rem;
+	background-color: rgba(221,221,221,0.7);
+	border-radius: 0.1rem;
+	box-shadow: 2px 2px 5px #333;
+}
+
+#hangManBody {
+	background: url("../img/fondo3.jpg"), url("../img/fondo2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-blend-mode: lighten, normal;
+}
+
+#letra {
+	height: 2rem;
+	width: 2rem;
+	font-size: 2rem;
+	text-align: center;
+	border-radius: 0.1rem;
+	box-shadow: 1px 1px 2px #333;
+}
+
+#question {
+    text-align: right;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    margin-bottom: -3rem;
+    font-size: 2rem;
+}
+
+#labelUsadas {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 9.7rem;
+    margin-left: 1rem;
+}
+
+#usadas {
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    color: red;
+    top: 12rem;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.labelLetra {
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px #333;
+}
+
+#todonada {
+	height: 2rem;
+	width: 27.2rem;
+	font-size: 2rem;
+	text-align: left;
+	border-radius: 0.1rem;
+	box-shadow: 1px 1px 2px #333;
+}
+
+#formulario input:focus {
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+	transition: 0.9s;
+}
+
+/*Zona de Colors*/
+
+#colorMain {
+	height: 35rem;
+	background-color: rgba(221,221,221,0.7);
+	border-radius: 0.1rem;
+	box-shadow: 2px 2px 5px #333;
+}
+
+#rec1, #rec2, #rec3, #rec4, #rec5, #rec6, #rec7, #rec8, #rec9 {
+	margin-top: 1.12rem;
+	font-size: 2rem;
+	width: 15rem;
+	height: 10rem;
+	margin-left: 1.12rem;
+	float: left;
+	border: 2px solid black;
+	color: white;
+	text-shadow: 2px 2px 5px #222;
+}
+
+#colorMain #rec1:hover, #rec2:hover, #rec3:hover, #rec4:hover, #rec5:hover, #rec6:hover, #rec7:hover, #rec8:hover, #rec9:hover {
+	background-color: yellow;
+	box-shadow: 2px 2px 7px #333;
+	transition: 0.7s;
+}
+
+progress {
+	z-index: -1;
+	display:block;
+	width:100%;
+	height:1rem;
+	padding: 15px 0 0 0;
+	margin-bottom: -2rem;
+	background:none;
+	border: 0;
+	border-radius:50px;
+	text-align: left;
+	position:relative;
+}
+
+#tiempo2 {
+	z-index: 1;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+
+/*Zona de Q-STORM*/
+
+#qstormMain #tiempo {
+	margin-top: 3rem;
+}
+
+#pregunta {
+	color: white;
+	padding-top: 2rem;
+    font-size: 1.5rem;
+    font-family: arial;
+    font-weight: bold;
+}
+
+#respuesta1, #respuesta2 {
+	font-size: 2rem;
+	padding: 1rem;
+	box-shadow: 2px 2px 7px #333;
+}
+
+/*Zona de Estadísticas*/
+
+#estadisticasMain {
+	height: 35rem;
+	background-color: rgba(221,221,221,0.7);
+	border-radius: 0.1rem;
+	box-shadow: 2px 2px 5px #333;
+	overflow-y: scroll;
+}
+
+table {
+	font-family: arial;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+th {
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 0.5rem;
+	background: #adeb8b;
+    border-top: 0.1rem solid #aabcfe;
+    border-bottom: 0.1rem solid #fff;
+    color: #039;
+}
+
+td {
+	padding: 0.5rem;
+	background: #cffb8b;
+	border-bottom: 0.1rem solid #fff;
+    color: #669;
+}
+
+tr:hover td {
+	background: #aaaaff;
+	color: #339;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        background-color: lightblue;
+    }
+
+    header {
+		width: 30rem;
+		height: 4rem;
+	}
+
+	header h1 {
+		font-size: 1.7rem;
+	}
+
+	main {
+		width: 30rem;
+		height: 12rem;
+	}
+
+	nav {
+		width: 30rem;
+	}
+
+	a {
+		padding: 0.2rem;
+	}
+
+	/*Zona del index*/
+
+	body main #formulario #datosLogin {
+		margin-bottom: 0.5rem;
+		text-shadow: 1px 2px 2px #000;
+		color: #ffa;
+	}
+
+	/*Zona del hangman*/
+
+	#hangManBody {
+		background: url("../img/fondo3.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-blend-mode: lighten, normal;
+	}
+
+    #labelLetra {
+        color: white;
+        font-weight: bold;
+    }
+
+    #question {
+        font-size: 1.5rem;
+    }
+
+    #labelUsadas {
+        font-size: 1.5rem;
+    }
+
+    /*Zona de colors*/
+
+    #rec1, #rec2, #rec3, #rec4, #rec5, #rec6, #rec7, #rec8, #rec9 {
+		margin-top: 1.12rem;
+		font-size: 2rem;
+		width: 8.4rem;
+		height: 7rem;
+		margin-left: 1.12rem;
+		float: left;
+		border: 2px solid black;
+		color: white;
+		text-shadow: 2px 2px 5px #222;
+	}
+	#colorMain {
+		height: 26rem;
+		background-color: rgba(221,221,221,0.7);
+		border-radius: 0.1rem;
+		box-shadow: 2px 2px 5px #333;
+	}
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>ASHLEEP GAMES! - HANGMAN</title>
+	<link rel="shortcut icon" href="./img/favicon2.png">
+	<link rel="stylesheet" href="./css/estilos.css">
+	<script src="./js/funcionesAhorcado.js"></script>
+</head>
+
+<body id="hangManBody" onload="preguntas()">
+	<header>
+		<h1>ASLEEP GAMES! - HANGMAN</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="hangMan.html">HANGMAN</a></li>
+			<li><a href="colorPicker.html">COLORS</a></li>
+			<li><a href="qstorm.html">Q-STORM</a></li>
+			<li><a href="estadisticas.html">ESTADÍSTICAS</a></li>
+		</ul>
+	</nav>
+	<main id="hangManMain">
+		<div id="question"></div>
+		<label for="usadas" id="labelUsadas">LETRAS USADAS:</label>
+		<div id="usadas"></div>
+		<img id="imgHang" src="./img/hang1.png" alt="Imagen Hangman">
+		<label for="letra" class="labelLetra">INTRODUCE UNA LETRA</label>
+		<input type="text" size="1" maxlength="1" id="letra" onkeypress="evaluarIntro(event)" autofocus>
+		<label for="todonada" class="labelLetra">TODO O NADA!</label>
+		<input type="text" id="todonada" onkeypress="evaluarIntro2(event)">
+	</main>
+</body>
+
+</html>
